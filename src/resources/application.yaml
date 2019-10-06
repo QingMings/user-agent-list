@@ -1,0 +1,28 @@
+
+spider:
+  config:
+    autoProxy: false
+    initialDelay: 0
+    maxRetries: 3
+    retryDelayMillis: 40000
+    usePrintRequestPipeline: false
+    useConsolePipeline: false
+
+  request:
+    sleepTime: 45000
+    autoSleepTime: false
+    downloadDelay: 45000
+    autoDownloadDelay: false
+    domainDelay: 45000
+    autoDomainDelay: false
+
+  queue:
+    # default、disruptor
+    type: disruptor
+
+  pipeline:
+    pipelineDelay: 45000
+    autoPipelineDelay: false
+
+  downloader:
+    type: vertx
